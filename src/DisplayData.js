@@ -44,7 +44,7 @@ function UserListDisplay(props){
         temp.splice(index,1)
         props.setUserList(temp)    
     }
-
+    
     return(
         <div>
             <ul>
