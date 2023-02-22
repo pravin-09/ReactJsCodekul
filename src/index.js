@@ -8,11 +8,12 @@ import ClassIncDec from './incdecclass';
 import ReadInput from './Readinput';
 import TableInput from './TableInput';
 import DisplayData from './DisplayData';
+import ComponentLifeCycle from './ComponentLifeCycle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ root.render(
   <React.StrictMode>
-  <DisplayData/>
+  <ComponentLifeCycle/>
   
   </React.StrictMode>
 );
