@@ -9,11 +9,12 @@ import ReadInput from './Readinput';
 import TableInput from './TableInput';
 import DisplayData from './DisplayData';
 import ComponentLifeCycle from './ComponentLifeCycle';
+import UseEffectDemo from './UseEffectDemo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(
   <React.StrictMode>
-  <ComponentLifeCycle/>
+  <UseEffectDemo/>
   
   </React.StrictMode>
 );
