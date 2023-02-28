@@ -10,11 +10,12 @@ import TableInput from './TableInput';
 import DisplayData from './DisplayData';
 import ComponentLifeCycle from './ComponentLifeCycle';
 import UseEffectDemo from './UseEffectDemo';
+import CallBackEvent from './CallBcakEvent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(
   <React.StrictMode>
-  <UseEffectDemo/>
+  <CallBackEvent/>
   
   </React.StrictMode>
 );
