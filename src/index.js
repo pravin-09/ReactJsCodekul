@@ -8,14 +8,17 @@ import ClassIncDec from './incdecclass';
 import ReadInput from './Readinput';
 import TableInput from './TableInput';
 import DisplayData from './DisplayData';
+
 import ComponentLifeCycle from './ComponentLifeCycle';
 import UseEffectDemo from './UseEffectDemo';
 import CallBackEvent from './CallBcakEvent';
-
+import Task from './Edit';
+import Edit from './Edit';
+import About from './Edit';
 const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(
   <React.StrictMode>
-  <CallBackEvent/>
+  <About/>
   
   </React.StrictMode>
 );

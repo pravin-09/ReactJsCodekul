@@ -22,7 +22,7 @@ function ChildComponent({ message, onInputChange }) {
     <div>
       <h2>Child Component</h2>
       <p>message:{message}</p>
-      <input type="text" onChange={onInputChange} />
+      <input type="text"  onChange={onInputChange}/>
     </div>
   );
 }
