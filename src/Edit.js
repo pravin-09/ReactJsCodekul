@@ -72,7 +72,7 @@ function About() {
                     edit
                   </button>
                 )}
-                <button type="button" onClick={()=>deleteUser(index)}>Del</button>
+                                    <button type="button" onClick={()=>deleteUser(index)}>Del</button>
 
               </td>
             </tr>
