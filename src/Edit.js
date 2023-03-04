@@ -21,10 +21,12 @@ function About() {
     setNewName("");
     setEditIndex(-1);
   };
+
   const handleEdit = (index) => {
     setEditIndex(index);
     setNewName(names[index]);
   };
+  
   const deleteUser=(index)=>{
     let temp=[...names]
     temp.splice(index,1)
@@ -72,7 +74,7 @@ function About() {
                     edit
                   </button>
                 )}
-                                    <button type="button" onClick={()=>deleteUser(index)}>Del</button>
+                  <button type="button" onClick={()=>deleteUser(index)}>Del</button>
 
               </td>
             </tr>
