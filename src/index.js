@@ -8,18 +8,21 @@ import ClassIncDec from './incdecclass';
 import ReadInput from './Readinput';
 import TableInput from './TableInput';
 import DisplayData from './DisplayData';
-
+import Home from './ReactRouter/Home';
 import ComponentLifeCycle from './ComponentLifeCycle';
 import UseEffectDemo from './UseEffectDemo';
 import CallBackEvent from './CallBcakEvent';
 import Task from './Edit';
 import Edit from './Edit';
 import About from './Edit';
+import Login from './ReactRouter/Login';
+import Loginpage from './ReactRouter/Loginpage';
 import ReactRouter from './ReactRouter/ReactRouter';
+import ContextApi from './ContextApi/ContextApi';
 const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(
   <React.StrictMode>
-  <ReactRouter/>
+  <ContextApi/>
   
   </React.StrictMode>
 );

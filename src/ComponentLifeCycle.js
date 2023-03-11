@@ -33,7 +33,7 @@ class ComponentLifeCycle extends React.Component {
     //output the html
     return (
       <div>
-        <h1>Life Cycle Methods-{this.state.Id}</h1>
+        <h1>Life Cycle Methods-</h1>
 
         <p>Life cycle method implementation!!!</p>
         <p>Number is : {this.state.number}</p>

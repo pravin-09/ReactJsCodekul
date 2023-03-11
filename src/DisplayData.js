@@ -8,13 +8,13 @@ function DisplayData(){
     }
     
     const[user,setUser]=React.useState(initialObj)
-    const[userList,setUserList]=React.useState([])
-
+    const[userList,setUserList]=React.useState([ ])
+    
     const handleInput=(event)=>{
         setUser({...user,[event.target.name]:event.target.value})
     }
 
-    const saveData=()=>{
+    const saveData=()=> {
 
         setUserList([...userList,user])
         document.getElementById("myForm").reset()
@@ -43,7 +43,7 @@ function UserListDisplay(props){
         let temp=[...props.userList]
         temp.splice(index,1)
         props.setUserList(temp)    
-    }
+    }           
 
     return(
         <div>

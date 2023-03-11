@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 function About() {
-  const [names, setName] = useState([]);
   const [newName, setNewName] = useState("");
+  const [names, setName] = useState([]);
   const [editIndex, setEditIndex] = useState(-1);
 
   const handleInputChange = (event) => {
@@ -15,10 +15,14 @@ function About() {
       let temp = [...names];
       temp[editIndex] = newName;
       setName(temp);
+      // console.log(editIndex+"if")
+
     } else {
       setName([...names, newName]);
+      // console.log(editIndex+"else")
+
     }
-    setNewName("");
+    setNewName(" ");
     setEditIndex(-1);
   };
 
@@ -41,12 +45,14 @@ function About() {
       <form onSubmit={handleSubmit}>
         First Name:
         <input type="text" value={newName} onChange={handleInputChange} />
+      
         {editIndex > -1 ? (
           <button type="submit">Save</button>
         ) : (
           <button type="submit">Add</button>
         )}
       </form>
+
       <table>
         <tbody>
           <tr>
@@ -57,23 +63,16 @@ function About() {
             <tr key={index}>
               <td>
                 {editIndex === index ? (
-                  <input
-                    type="text"
-                    value={newName}
-                    onChange={handleInputChange}
-                  />
-                ) : (
-                  name
-                )}
+                  <input type="text" value={newName} onChange={handleInputChange}/>) : ( name )}
               </td>
               <td>
                 {editIndex === index ? (
                   <button type="submit">edit</button>
                 ) : (
-                  <button type="button" onClick={() => handleEdit(index)}>
-                    edit
-                  </button>
+                  <button type="button" onClick={() => handleEdit(index)}>edit</button>
                 )}
+
+
                   <button type="button" onClick={()=>deleteUser(index)}>Del</button>
 
               </td>
