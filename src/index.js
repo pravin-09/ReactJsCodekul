@@ -19,10 +19,13 @@ import Login from './ReactRouter/Login';
 import Loginpage from './ReactRouter/Loginpage';
 import ReactRouter from './ReactRouter/ReactRouter';
 import ContextApi from './ContextApi/ContextApi';
+import AxiosDemo from './AxiosDemo/AxiosDemo';
+import UseMemoDemo from './UseMemo';
 const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(
   <React.StrictMode>
-  <ContextApi/>
+    <UseMemoDemo/>
+  
   
   </React.StrictMode>
 );
