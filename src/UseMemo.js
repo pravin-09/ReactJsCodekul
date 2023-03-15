@@ -3,20 +3,17 @@ function UseMemoDemo(){
 
     const users=[{
         id:1,
-        name:'John'
+        name:'Abhi'
     },{
         id:2,
-        name:'Peter'
-    },{
-        id:3,
-        name:'Richard'
-    }]
+        name:'Rahul'
+    },]
 
     const[text,setText]=React.useState('')
     const[search,setSearch]=React.useState('')
 
-    const handleInput=event=>{
-        setText(event.target.value)
+    const handleInput=e=>{
+        setText(e.target.value)
     }
 
     const handleSearch=()=>{
@@ -24,13 +21,12 @@ function UseMemoDemo(){
     }
 
     const filteredData=useMemo(()=>users.filter((user)=>{
-        console.log('hiiiiii')
         return user.name.includes(search)
     }),[search])
 
     return(
         <div>
-            <h1>Use Memo Demo!!!</h1>
+            <h1>UseMemo</h1>
             <input type='text' onChange={handleInput}/>
             <button type="button" onClick={handleSearch}>Search</button>
             <DisplayUsers userList={filteredData}/>
