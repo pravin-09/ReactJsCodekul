@@ -4,15 +4,15 @@ import { addCounter } from "./actions";
 
 function AddCounter(props){
 
-    return(
-        <div>
+
+    return( 
+        <div> 
             <button type="button" onClick={()=>props.dispatch(addCounter())}>Add</button>
-        </div>
-    )
-}
+        </div> 
+    ) 
+} 
 
 function mapDispatchToProps(dispatch){
-
     return{
         actions:bindActionCreators(addCounter,dispatch)
     }

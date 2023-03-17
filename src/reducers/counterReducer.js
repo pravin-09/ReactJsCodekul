@@ -6,10 +6,10 @@ const counterReducer=(state=100,action)=>{
 
     switch(action.type){
         case actionTypes.ADD_COUNTER:
-            return newState=action.payload+1
+            return newState=state + action.payload
 
         case actionTypes.REDUCE_COUNTER:
-            return newState=action.payload-1    
+            return newState=state - action.payload    
 
         default:
             return state    
