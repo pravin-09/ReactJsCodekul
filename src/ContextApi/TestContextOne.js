@@ -1,9 +1,9 @@
 import { useContext } from "react"
-import { MyContext } from "./ContextApi"
+import { Pravin } from "./ContextApi"
 
 function TestContextOne(){
 
-    const {number,setNumber}=useContext(MyContext)
+    const {number,setNumber}=useContext(Pravin)
 
     const incrementValue=()=>{
         setNumber(number+1)

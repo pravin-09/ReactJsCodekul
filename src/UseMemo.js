@@ -1,13 +1,13 @@
 import React,{useMemo} from "react"
 function UseMemoDemo(){
 
-    const users=[{
+    const users=[ {
         id:1,
         name:'Abhi'
     },{
         id:2,
         name:'Rahul'
-    },]
+    }, ]
 
     const[text,setText]=React.useState('')
     const[search,setSearch]=React.useState('')

@@ -22,11 +22,14 @@ import ContextApi from './ContextApi/ContextApi';
 import AxiosDemo from './AxiosDemo/AxiosDemo';
 import UseMemoDemo from './UseMemo';
 import UseReducerDemo from './UseReducerDemo';
+import AxiosPostDemo from './AxiosDemo/AxiosPostDemo';
+import FormTask from './FormTask';
 const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(
   <React.StrictMode>
-    <UseReducerDemo/>
-  
+    <FormTask/>
+    
+
   </React.StrictMode>
 );
 

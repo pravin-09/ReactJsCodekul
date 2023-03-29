@@ -2,7 +2,7 @@ import {useState, createContext } from "react"
 import TestContextOne from "./TestContextOne"
 import TestContextTwo from "./TestContextTwo"
 
-export const MyContext=createContext()
+export const Pravin=createContext()
 
 function ContextApi(){
 
@@ -13,7 +13,7 @@ function ContextApi(){
     }
 
     return(
-        <MyContext.Provider value={{number,setNumber}}>
+        <Pravin.Provider value={{number,setNumber}}>
         <div>
             <h1>Context API Demo!!!</h1>
             <p>Number in Parent : {number}</p>
@@ -21,7 +21,7 @@ function ContextApi(){
             <TestContextOne/>
             <TestContextTwo/>
         </div>
-        </MyContext.Provider>
+        </Pravin.Provider>
     )
 }
 

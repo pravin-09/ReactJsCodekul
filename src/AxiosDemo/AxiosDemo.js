@@ -1,16 +1,17 @@
 
 import axios from "axios";
 import React,{ useEffect } from "react";
-
+//sucessfully
 function AxiosDemo(){
 
     const[userList,setUserList]=React.useState([])
 
-    //get request
+    //get request 
     useEffect(()=>{
-        axios.get("https://jsonplaceholder.typicode.com/posts")
+        axios.get("http://localhost:8080/get")
         .then(response=>response.data)
         .then(res=>{
+            console.log(res)
             setUserList(res)
         })
     },[])
@@ -21,7 +22,10 @@ function AxiosDemo(){
             <ul>
                 {
                     userList.map((user)=>(
-                        <li>{user.username}</li>
+                        <>
+                        <ul>name: {user.name}</ul>
+                        <ul>address: {user.address}</ul>
+                        </>
                     ))
                 }
             </ul>

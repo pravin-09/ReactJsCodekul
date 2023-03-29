@@ -1,13 +1,13 @@
 
 import React from "react";
 import axios from "axios";
-
+//sucessfully
 function AxiosPostDemo(){
 
     const postObj={
-        userId:'',
-        title:'',
-        body:''
+       
+        address:'',
+        name:''
     }
 
     const[data,setData]=React.useState(postObj)
@@ -19,34 +19,30 @@ function AxiosPostDemo(){
     }
 
     const submitData=()=>{
-        axios.post("https://jsonplaceholder.typicode.com/posts",data)
-        .then(response=>response.data)
-        .then(res=>{
-            console.log(res)
-            setDisplay(res)
-        })
+        
+        
     }
 
     return(
         <div>
             <form>
-                <label>UserID : </label>
-                <input type='text' name='userId' onChange={handleChange}/>
+                {/* <label>UserID : </label>
+                <input type='text' name='userId' onChange={handleChange}/> */}
 
-                <label>Title : </label>
-                <input type='text' name='title' onChange={handleChange}/>
+                <label>Address : </label>
+                <input type='text' name='address' onChange={handleChange}/>
 
-                <label>Body : </label>
-                <input type='text' name='body' onChange={handleChange}/>
+                <label>name : </label>
+                <input type='text' name='name' onChange={handleChange}/>
 
                 <button type="button" onClick={submitData}>Submit</button>
             </form>
 
             {display ? (<div>
                 <h2>New User Added: </h2>
-                <p>User Id: {display.userId}</p>
-                <p>Title: {display.title}</p>
-                <p>Body: {display.body}</p>
+                {/* <p>User Id: {display.userId}</p> */}
+                <p>address: {display.address}</p>
+                <p>name: {display.name}</p>
             </div>):""}
             
         </div>

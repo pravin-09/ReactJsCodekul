@@ -1,10 +1,12 @@
 import { useContext } from "react"
-import { MyContext } from "./ContextApi"
+import { Pravin } from "./ContextApi"
+
+
 function TestContextTwo(){
 
     // const number=useContext(MyContext)
 
-    const {number,setNumber}=useContext(MyContext)
+    const {number,setNumber}=useContext(Pravin)
 
     return(
         <div>
